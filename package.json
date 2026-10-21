@@ -1,0 +1,27 @@
+{
+  "name": "clinic-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "DD4 - Back-End Essentials for AI Apps. PwC Full-Stack AI track.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "node src/server.js",
+    "test": "node scripts/test.mjs",
+    "storm": "node scripts/storm.mjs",
+    "state": "node scripts/state.mjs",
+    "migrate": "node scripts/migrate.mjs",
+    "backfill": "node scripts/backfill-embeddings.js",
+    "doctor": "node scripts/lab.mjs doctor",
+    "baseline": "node scripts/lab.mjs baseline",
+    "step": "node scripts/lab.mjs step",
+    "checkpoint": "node scripts/lab.mjs checkpoint"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.4.6",
+    "express": "5.3.0",
+    "ioredis-mock": "8.13.1"
+  }
+}
